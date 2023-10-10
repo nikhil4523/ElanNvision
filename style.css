@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* Place it in front of everything */
+  pointer-events: none; /* Allow interactions with elements behind the overlay */
+}
+
+.overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+.overlay1 {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    width: 25vw;
+    height: 25vh;
+    z-index: 999; 
+    pointer-events: none;
+    scale: 1.5; 
+  }
+  
+  .overlay1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+   .flex3{
+
+    position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 6%;
+  top: 20%;
+   }
+
+  .flex3 a{
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 25%;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+  }
+
+
+p{
+  color: #ffffff;
+  font-size: 2rem;
+  filter: drop-shadow(2px 3px 6px #000000);
+text-align: center;
+/* margin-right: 50px; */
+position: fixed;
+margin-top: 100%;
+display: none;
+padding: 15px;
+}
+.flex1{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 6%;
+  top: 20%;
+}
+
+.flex2{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 6%;
+  top: 20%;
+}
+ a:hover {
+  animation: glitch 0.5s 1;
+}
+
+.flex1 a, .flex2 a{
+  text-decoration: none;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 25%;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.video-container {
+    position: relative;
+    height: 100vh; /* Set a specific height for the video container if needed */
+    overflow: hidden;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the '0.7' to set the opacity (0 is fully transparent, 1 is fully opaque) */
+    z-index: 0;
+}
+
+.about
+{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 10%;
+
+}
+
+@keyframes moveText {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(30px); /* Adjust the distance the text should move */
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.animated-text {
+   /* Set your desired font size */
+  animation: moveText 2s infinite; /* Adjust animation duration as needed */
+}
+
+
+.fest
+{
+  right: 10%;
+
+width: 25vw;
+height: 25vh;
+
+}
+.fest2
+{
+  left: 10%;
+width: 25vw;
+height: 25vh;
+
+}
+
+
+
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+@media(max-width: 1100px){
+  .menu ul li.open {
+    animation: glitch 1s;
+    animation-delay: 0.5s;
+}
+
+.v
+{
+    
+height: 100vh;
+width: 100vw;
+
+    object-fit: cover;
+    z-index: -100;
+}
+
+.icon-bg{
+  display: block;
+}
+.flex1 a, .flex2 a{
+  display: none;
+}
+.overlay img{
+  display: none;
+}
+
+.overlay1 {
+    
+    scale: 1.7;
+}
+  
+
+.overlay1 img{
+    margin-top: 14%;
+    margin-left: 15%;
+  }
+.logo{
+  margin-top: 80%;
+  margin-left: 18%;
+
+}
+ p{
+  color: #ffffff;
+  font-size: 2rem;
+  filter: drop-shadow(4px 4px 6px #000000);
+text-align: center;
+/* margin-right: 50px; */
+position: fixed;
+margin-top: 100%;
+display: block;
+padding: 15px;
+}
+.overlay1 img{
+  height: 150px;
+  
+
+}
+}
+
+@keyframes glitch {
+  from {
+      text-shadow: 0 0px 0px white;
+  }
+  20% {
+      text-shadow: -2px 2px 0px rgb(195, 255, 0);
+  }
+  40% {
+      text-shadow: -2px 2px 0px rgb(2, 209, 255);
+  }
+  60% {
+      text-shadow: 2px 2px 0px rgb(0, 255, 4);
+  }
+  80% {
+      text-shadow: -2px -2px 0px green;
+  }
+  to {
+      text-shadow: 0px 0px 0px white;
+  }
+}
